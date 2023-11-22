@@ -16,6 +16,8 @@ RUN apt-get install -y cmake
 
 RUN pip install -r requirements.txt
 
+RUN pip install dlib -vvv
+
 COPY . /app/
 
 # Make port 5000 available to the world outside this container
