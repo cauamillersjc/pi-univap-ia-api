@@ -7,13 +7,13 @@ WORKDIR /app
 # Copy the requirements file into the container at /app
 COPY requirements.txt /app/
 
-RUN sudo apt-get update
+RUN apt-get update
 
-RUN sudo apt-get install -y build-essential cmake
+RUN apt-get install -y build-essential cmake
 
-RUN sudo apt-get install -y libopenblas-dev liblapack-dev
+RUN apt-get install -y libopenblas-dev liblapack-dev
 
-RUN sudo apt-get install -y libx11-dev libgtk-3-dev
+RUN apt-get install -y libx11-dev libgtk-3-dev
 
 RUN pip install --upgrade pip
 
