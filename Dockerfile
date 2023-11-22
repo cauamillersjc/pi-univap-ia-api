@@ -1,6 +1,7 @@
 FROM ubuntu:latest AS build
 
-RUN apt-get update && apt-get upgrade
+RUN apt-get update
+RUN apt-get -y upgrade
 
 WORKDIR /app
 
