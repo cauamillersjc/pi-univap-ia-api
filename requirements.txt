@@ -2,6 +2,6 @@ flask
 flask_restful
 flask_cors
 opencv-python
-dlib
+# dlib
 face_recognition
 imageio
